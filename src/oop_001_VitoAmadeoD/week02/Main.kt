@@ -22,9 +22,11 @@ fun main()
     }
     else
     {
-        print("Masukkan Juruusan: ")
+        print("Masukkan Jurusan: ")
         val major = scanner.nextLine()
+
+        val s1 = Student(name, nim, major)
         println("Status: Pendaftaran Selesai")
     }
-    
+
 }
