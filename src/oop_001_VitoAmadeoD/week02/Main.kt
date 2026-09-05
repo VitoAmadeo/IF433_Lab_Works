@@ -26,4 +26,5 @@ fun main()
         val major = scanner.nextLine()
         println("Status: Pendaftaran Selesai")
     }
+    
 }
