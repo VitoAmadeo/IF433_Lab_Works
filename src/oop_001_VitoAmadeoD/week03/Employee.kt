@@ -2,6 +2,8 @@ package oop_001_VitoAmadeoD.week03
 
 class Employee(val name: String)
 {
+    private var performanceRating: Int = 3
+
     var salary: Int = 0
         set(value)
         {
@@ -15,11 +17,24 @@ class Employee(val name: String)
                 field = value
             }
         }
+
+    fun increasePerformance()
+    {
+        performanceRating++
+        println("Kinerja $name meningkat! Rating $performanceRating")
+    }
+
+    fun printStatus()
+    {
+        println("Karyawan: $name, Rating $performanceRating")
+    }
 }
 
 fun main()
 {
     val e = Employee("Budi")
-    println("Test Error")
     e.salary = 5000
+    e.printStatus()
+    e.increasePerformance()
+    e.printStatus()
 }
