@@ -24,6 +24,13 @@ class player(val name: String)
         }
 
     }
+}
 
-
+fun main()
+{
+    val john =player("John")
+    john.addXp(50)
+    //john.xp()
+    println("${john.level}")
+    john.addXp(60)
 }
