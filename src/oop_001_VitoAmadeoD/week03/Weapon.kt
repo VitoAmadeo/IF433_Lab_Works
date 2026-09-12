@@ -32,7 +32,7 @@ class weapon(val name: String)
 fun main()
 {
     val glock = weapon("Glock")
-    glock.damage = 400
+    glock.damage = 2000
     println("${glock.damage}, ${glock.tier}")
 
 }
