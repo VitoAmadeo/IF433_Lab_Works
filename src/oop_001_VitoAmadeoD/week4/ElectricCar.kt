@@ -1,9 +1,9 @@
 package oop_001_VitoAmadeoD.week4
 
-open class ElectricCar(brand: String, val numberOfDoors: Int, val batteryCapacity: Int) : Vehicle(brand)
+open class ElectricCar(brand: String, numberOfDoors: Int, val batteryCapacity: Int) : Car(brand, numberOfDoors)
 {
     final override fun accelerate()
     {
-        println("$brand berakselerasi dalam sunyi, kapasitas battery: $batteryCapacity")
+        println("$brand berakselerasi dalam sunyi, kapasitas battery: $batteryCapacity%")
     }
 }
