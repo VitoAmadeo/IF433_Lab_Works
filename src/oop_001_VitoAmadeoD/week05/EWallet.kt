@@ -1,6 +1,6 @@
 package oop_001_VitoAmadeoD.week05
 
-class EWallet (var balance: Double)
+class EWallet (val accountName: String,var  balance: Double) : PaymentMethod (accountName)
 {
     override fun processPayment(amount: Double)
     {
