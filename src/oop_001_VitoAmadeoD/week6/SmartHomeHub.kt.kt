@@ -33,7 +33,7 @@ class SmartHomeHub
             }
             if (device is SmartSpeaker)
             {
-                device.playMusic("WARNING ")
+                device.playMusic("WARNING!")
             }
         }
     }
