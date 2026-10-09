@@ -11,7 +11,7 @@ class SmartHomeHub {
 
     fun turnOffAllSwitches()
     {
-        println("\n--- Mematikan semua perangkat ---")
+        println("\nShutting down")
         for (device in devices)
         {
             if (device is Switchable)
