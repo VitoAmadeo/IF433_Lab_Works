@@ -8,13 +8,13 @@ fun processCheckout(method: PaymentMethod, amount: Double)
 
 fun main()
 {
-    val myWatch = `Smartwatch.kt`()
+    val myWatch = Smartwatch()
     myWatch.showTime()
 
     val myPhone = Smartphone()
     myPhone.turnOn()
-    val pay1 = Gopay()
-    val pay2 = Creditcard()
+    val pay1 = gopay()
+    val pay2 = CreditCard()
 
     println("Testing")
     processCheckout(pay1, 50000.0)
