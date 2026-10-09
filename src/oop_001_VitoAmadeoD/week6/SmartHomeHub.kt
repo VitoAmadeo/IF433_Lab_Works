@@ -1,6 +1,7 @@
 package oop_001_VitoAmadeoD.week6
 
-class SmartHomeHub {
+class SmartHomeHub
+{
     val devices = mutableListOf<SmartDevice>()
 
     fun addDevice(device: SmartDevice)
@@ -17,6 +18,22 @@ class SmartHomeHub {
             if (device is Switchable)
             {
                 device.turnOff()
+            }
+        }
+    }
+
+    fun activateSecurityMode()
+    {
+        println("\nSecurity ON")
+        for (device in devices)
+        {
+            if (device is Recordable)
+            {
+                device.startRecord()
+            }
+            if (device is SmartSpeaker)
+            {
+                device.playMusic("WARNING ")
             }
         }
     }
