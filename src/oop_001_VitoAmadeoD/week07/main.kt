@@ -2,5 +2,11 @@ package oop_001_VitoAmadeoD.week07
 
 fun main ()
 {
-    val client = NetworkClient("http://api.umn.ac.id")
+    println(" Testing ")
+    println("Status : ${DatabaseManager.connectionStatus}")
+    DatabaseManager.connect()
+
+    println(" Testing Companion")
+    val client = NetworkClient.createClient()
+    client.connect()
 }
