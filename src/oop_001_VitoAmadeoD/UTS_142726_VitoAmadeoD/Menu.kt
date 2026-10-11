@@ -2,14 +2,14 @@ package oop_001_VitoAmadeoD.UTS_142726_VitoAmadeoD
 
 abstract class Menu(val name: String, IMenuCode: String, Iprice: Double = 0.0) : Bill
 {
-    var MenuCode: String= ""
+    var menuCode: String= ""
     get() = "UMN-$field"
     set(value)
     {
         field = value.uppercase()
     }
 
-    var Price: Double = 0.0
+    var price: Double = 0.0
     set(value)
     {
         if (value >= 0.0)
@@ -24,8 +24,8 @@ abstract class Menu(val name: String, IMenuCode: String, Iprice: Double = 0.0) :
 
     init
     {
-        this.MenuCode = IMenuCode
-        this.Price = Iprice
+        this.menuCode = IMenuCode
+        this.price = Iprice
     }
 
     abstract override fun calculateSubtotal(qty: Int): Double
