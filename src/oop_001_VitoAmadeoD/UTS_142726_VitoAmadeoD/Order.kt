@@ -1,6 +1,6 @@
 package oop_001_VitoAmadeoD.UTS_142726_VitoAmadeoD
 
-class Order(val customer: Customer, var status : OrderStatus = OrderStatus.WAITING)
+class Order(val customer: Customer, var status : OrderStatus = OrderStatus.COOKING)
 {
     private val orders: MutableList<Pair<Menu, Int>> = mutableListOf()
 

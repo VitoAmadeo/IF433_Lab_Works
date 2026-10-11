@@ -40,6 +40,7 @@ fun main()
 
         if (choice == 0)
         {
+            println("Checking out....")
             ordering = false
         }
         else if (choice in 1..menu.size)

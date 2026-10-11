@@ -10,7 +10,7 @@ class food (name : String, menuCode: String, price: Double = 0.0, val packagingF
     override fun printMenu(qty: Int)
     {
         val subtotal = calculateSubtotal(qty)
-        println("[$menuCode] $name * $qty +(Fee: Rp$packagingFee / box = $subtotal")
+        println("[$menuCode] $name * $qty +(Fee: Rp$packagingFee / box = Rp $subtotal")
     }
 }
 
@@ -26,6 +26,6 @@ class drink (name: String, menuCode: String, price: Double = 0.0, val large: Boo
     {
         val size = if (large) "Large" else "Small"
         val subtotal = calculateSubtotal(qty)
-        println("[$menuCode] $name ($size) = $subtotal")
+        println("[$menuCode] $name ($size) = Rp $subtotal")
     }
 }
