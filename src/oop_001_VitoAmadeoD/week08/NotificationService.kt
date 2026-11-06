@@ -7,7 +7,7 @@ class NotificationService
         println("Sending email to $emailAddress")
     }
 
-    fun processUser(user: userProfile)
+    fun processUser(user: UserProfile)
     {
         if(user.email!=null)
         {
