@@ -19,4 +19,3 @@ fun main()
 
     honorNames.forEach { println("Honor Roll: $it") }
 }
-}
