@@ -9,11 +9,13 @@ fun main()
 
     println("\n--- Test Let Block ---")
     val validOrder = Order(null, 250000)
-    val receipt = validOrder.totalPrice?.let{ price -> val tax = price * 0.11 "transaction Successful. Price: Rp$price, Tax: $tax"} ?: "Transaction failed, price is not set"
+    val receipt = validOrder.totalPrice?.let{ price ->
+        val tax = price * 0.11
+        "transaction Successful. Price: Rp$price, Tax: $tax"} ?: "Transaction failed, price is not set"
     println(receipt)
 
     println("\n--- test safe casting ---")
-    val mixedData: List<any> = listOf(
+    val mixedData: List<Any> = listOf(
         "smartphone",
         1500000,
         UserProfile("Andi", null)
