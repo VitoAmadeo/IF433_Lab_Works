@@ -4,3 +4,9 @@
     {
     }
 
+    fun main()
+    {
+        println("\n--- Test Multiple Parameters ---")
+        val itemPrice = PairBox("Bitcoin", 65000)
+        println("asset: ${itemPrice.key}, price: ${itemPrice.value} USD")
+    }
