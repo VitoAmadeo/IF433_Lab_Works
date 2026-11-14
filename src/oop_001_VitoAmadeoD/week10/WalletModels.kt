@@ -1,4 +1,10 @@
 package oop_001_VitoAmadeoD.week10
 
-class WalletModels {
+interface Nameable
+{
+    val name: String
 }
+
+data class Coin(override val name: String, val balance: Double): Nameable
+
+data class Transaction(val id: String, val amount: Double)
