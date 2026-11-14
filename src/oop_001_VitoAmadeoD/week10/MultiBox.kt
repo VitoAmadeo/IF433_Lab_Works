@@ -1,6 +1,6 @@
-package oop_001_VitoAmadeoD.week10
+    package oop_001_VitoAmadeoD.week10
 
-class PairBox<K, V>(val key: K, val value: V)
-{
+    class PairBox<K, V>(val key: K, val value: V)
+    {
+    }
 
-}
