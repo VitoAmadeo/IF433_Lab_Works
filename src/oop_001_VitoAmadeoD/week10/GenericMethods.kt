@@ -4,3 +4,8 @@ fun <T> printData(data: T)
 {
     println("Recieved data: $data")
 }
+
+fun <T> processData(input: T): T
+{
+    return input
+}
